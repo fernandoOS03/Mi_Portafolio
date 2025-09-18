@@ -21,13 +21,11 @@ const Experience = ({
           <div className="experience-name-company">{company}</div>
         </div>
 
-
         <div className="experience-subtitles">
           <div className="experience-title">{title}</div>
           <div className="experience-date">{date}</div>
         </div>
 
-        {/* Descripción */}
         <div className="experience-description">{description}</div>
       </div>
     </div>

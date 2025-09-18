@@ -31,14 +31,14 @@ const Notfound = () => {
 								Oops! <FontAwesomeIcon icon={faFaceSadTear} />
 							</div>
 							<div className="not-found-message">
-								We can't seem to find the page you're looking
-								for.
+								Este proyecto esta en fase de desarrollo.
 								<br />
-								The requested URL "{window.location.href}" was
-								not found on this server.
+								Puedes visitar el Repositorio  en la siguiente URL:
+								https://github.com/fernandoOS03/Proyecto_Barberia
+								
 							</div>
 							<a href="/" className="not-found-link">
-								Go back to the home page
+								Volver al Inicio
 							</a>
 						</div>
 					</div>

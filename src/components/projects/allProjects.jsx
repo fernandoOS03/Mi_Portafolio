@@ -11,10 +11,13 @@ const AllProjects = () => {
         <div className="all-projects-project" key={index}>
           <Project
             logo={project.logo}
+            url_website={project.url_website}
+            img_projecto={project.img_projecto}
             title={project.title}
             description={project.description}
             linkText={project.linkText}
             link={project.link}
+            size="small"
           />
         </div>
       ))}

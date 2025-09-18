@@ -27,12 +27,14 @@ const ExperienceWork = () => {
         <NavBar active="experienceWork" />
         <div className="content-wrapper">
           <div className="experience-container">
-            <div className="title experience-title">hola mundo</div>
+            <div className="title experience-title">
+              Mi Trayectoria Profesional
+            </div>
             <div className="subtitle experience-subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus non alias at itaque deserunt neque officia tenetur,
-              qui nemo natus labore recusandae vitae impedit, laboriosam saepe
-              vero ratione doloremque commodi.
+              A lo largo de mi camino profesional he trabajado en proyectos que
+              combinan desarrollo web, automatización y manejo de datos. Estas
+              experiencias me han permitido crecer técnica y personalmente,
+              asumiendo nuevos retos con pasión y responsabilidad.
             </div>
             <div className="experience-list">
               <AllExperience />

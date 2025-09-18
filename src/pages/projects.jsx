@@ -35,13 +35,13 @@ const Projects = () => {
             </div>
 
             <div className="subtitle projects-subtitle">
-              He trabajado en distintos proyectos a lo largo de los mess y me
+              He trabajado en distintos proyectos a lo largo de los meses y me
               siento orgulloso del progreso que estoy teniendo. Muchos de estos
-              proyectos son Proyectos finales de mi carrera o proyecyos
-              personalesy estan disponibles para que otros los exlporen. Estoy
-              habierto a sugerencias o mejoras que puedas tener en mente.
-              Colaborar con otros es una gran manera de aprender y crecer, y
-              siempre estoy abierto a nuevas ideas y comentarios.
+              proyectos son finales de mi carrera o proyectos personales y estan
+              disponibles para que otros los exploren. Estoy habierto a
+              sugerencias o mejoras que puedas tener en mente; Colaborar con
+              otros es una gran manera de aprender y crecer, y siempre estoy
+              abierto a nuevas ideas y comentarios.
             </div>
 
             <div className="projects-list">

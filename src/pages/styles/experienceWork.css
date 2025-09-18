@@ -36,22 +36,177 @@
 	color: var(--secondary-color);
 	font-size: 16px;
 	line-height: 1.5;
-	margin-bottom: 2em;
 }
 
 .experience-list {
 	width: 100%;
 }
 
-@media (max-width: 600px) {
-	.experience-container {
-		padding-top: 120px;
-		
-	}
-
-	.experience-list {
-	width: 100%;
-	overflow: hidden;
+/* Media Queries para ExperienceWork - 1024px hacia abajo */
+@media (max-width: 1024px) {
+  .experience-container {
+    padding: 20px 15px;
+  }
+  
+  .experience-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .experience-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+  
+  .experience-list {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
+@media (max-width: 768px) {
+  .experience-title {
+    font-size: 1.9rem;
+  }
+  
+  .experience-subtitle {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+  
+  .experience-logo {
+    top: 3vh;
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-container {
+    padding: 15px 10px;
+    padding-top: 100px; /* Reducido desde 120px */
+  }
+  
+  .experience-title {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+  }
+  
+  .experience-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+  
+  .experience-list {
+    width: 100%;
+    overflow: visible; /* Cambiado de hidden a visible */
+  }
+  
+  .experience-logo {
+    top: 2.5vh;
+    transform: scale(0.8);
+    left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 1.5rem;
+  }
+  
+  .experience-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .experience-container {
+    padding: 12px 8px;
+    padding-top: 90px;
+  }
+  
+  .experience-logo {
+    transform: scale(0.7);
+    top: 2vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .experience-title {
+    font-size: 1.4rem;
+  }
+  
+  .experience-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .experience-container {
+    padding: 10px 5px;
+    padding-top: 80px;
+  }
+  
+  .experience-logo {
+    transform: scale(0.6);
+    top: 1.5vh;
+    left: 15px;
+  }
+}
+
+/* Estilos para mejorar la visualización de las experiencias individuales */
+@media (max-width: 1024px) {
+  .experience-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .experience-company-logo {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-item {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .experience-company-logo {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .experience-date {
+    font-size: 0.9rem;
+  }
+  
+  .experience-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-item {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .experience-company-logo {
+    max-width: 45px;
+    max-height: 45px;
+  }
+  
+  .experience-date {
+    font-size: 0.85rem;
+  }
+  
+  .experience-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
 }

@@ -11,8 +11,6 @@ const INFO = {
     github: "https://github.com/fernandoOS03",
     linkedin: "https://www.linkedin.com/in/fernando-olivera-salazar-a77437307/",
     instagram: "https://www.instagram.com/fer.ols/",
-    // stackoverflow: "https://stackoverflow.com/",
-    // facebook: "https://facebook.com/",
   },
 
   homepage: {
@@ -22,7 +20,7 @@ const INFO = {
   },
 
   about: {
-    title: "Soy Fernando Olivera, vivo en Lima - Perú.",
+    title: "Mi nombre es Fernando Olivera, vivo en Lima - Perú.",
     description:
       "Estoy desarrollando mi carrera como Técnico en computación e Informática en el Instituo Cibertec, actualmente estoy cursando el 5to Ciclo y me siento orgulloso del progreso que he logrado hasta ahora. En un futuro cercano, me gustaría especializarme en el desarrollo de aplicaciones web y móviles, y seguir creciendo hasta convertirme en un referente en mi campo. ",
   },
@@ -36,29 +34,24 @@ const INFO = {
 
   projects: [
     {
-      title: "Web Scraping de Información",
+      title: "Barberia",
+      url_website: "/404.jsx",
+      img_projecto: "/barberia.png",
       description:
-        "Proyecto de web scraping utilizando Python y playwright para extraer datos de sitios web y almacenarlos en una archivo Json.",
-      logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-      linkText: "View Project",
-      link: "https://github.com/fernandoOS03/web_scraping_p_country",
-    },
-
-    {
-      title: "Project 2",
-      description:
-        "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-      logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
-      linkText: "View Project",
-      link: "https://github.com",
+        "Desarrollado con Java usando spring boot, Talwind CSS para el front; este es un programa realizando con el fin de hacer y realizar citas para una barberia. fue hecho como proyecto final junto  con dos de mis compañeros",
+      logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.png",
+      linkText: "Ver código en GitHub",
+      link: "https://github.com/fernandoOS03/Proyecto_Barberia",
     },
     {
-      title: "Project 2",
+      title: "Portafolio Personal",
+      url_website: "https://www.google.com/",
+      img_projecto: "/portafolio.png",
       description:
-        "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-      logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
-      linkText: "View Project",
-      link: "https://github.com",
+        "Portafolio personal desarrollado en React. Presenta mis proyectos de desarrollo backend y especialización en automatización web con diversas tecnologías.",
+      logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/javascript/javascript.png",
+      linkText: "Ver código en GitHub",
+      link: "https://github.com/fernandoOS03/Mi_Portafolio.git",
     },
   ],
 
@@ -69,23 +62,15 @@ const INFO = {
       company: "Notaria Paino",
       date: "Enero 2024 - Junio 2024",
       description:
-        "Desarrollé interfaces modernas y responsivas utilizando React y Tailwind CSS.",
+        "Realizo  procesos de web scraping en Python utilizando Playwright y Selenium para la extracción automatizada de datos; Ademas de automatizacion de tareas repetitivas y Gestión y optimización de bases de datos.",
     },
     {
       logoEmpresa: "/iyf.jpg",
-      title: "Backend Developer",
+      title: "Voluntario",
       company: "International Youth Fellowship",
-      date: "Julio 2024 - Actualidad",
+      date: "Jul. 2022 – Jun. 2023",
       description:
-        "    Lorem ipsum dolor sit amet consectetur adipisicing eli Necessitatibus non alias at itaque deserunt neque officia tenetur,qui nemo natus labore recusandae vitae impedit, laboriosam saepevero ratione doloremque commodi.",
-    },
-    {
-      logoEmpresa: "/iyf.jpg",
-      title: "Backend Developer",
-      company: "International Youth Fellowship",
-      date: "Julio 2024 - Actualidad",
-      description:
-        "Implementación de APIs REST y servicios en la nube con Node.js y MongoDB.",
+        "Desarrollo de habilidades de liderazgo, empatía, trabajo en equipo y responsabilidad, Ademas apoyé en el preparación de eventos para que más Jovenes como Yo puedan conocer su vocación. ",
     },
   ],
 };

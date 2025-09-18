@@ -1,39 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import {
-  faFolderOpen,
-  faLink,
-  faMailBulk,
-  faProjectDiagram,
-} from "@fortawesome/free-solid-svg-icons";
+import { faFolderOpen, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faGithub,
-  faStackOverflow,
-  faInstagram,
-  faLinkedin,
-  faRProject,
-} from "@fortawesome/free-brands-svg-icons";
-
-import Logo from "../components/common/logo";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
-import { ExperienceCard } from "../components/homepage/experienceCard";
+import Project from "../components/projects/project";
 import Experience from "../components/workExperience/experience";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/homepage.css";
-import Spline from "@splinetool/react-spline";
 import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload";
-import { faFileDownload } from "@fortawesome/free-solid-svg-icons/faFileDownload";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
   const [stayLogo, setStayLogo] = useState(false);
@@ -148,7 +132,8 @@ const Homepage = () => {
               </a>
             </div>
 
-            <div className="homepage-projects">
+           
+            <div className="homepage-after-projects">
               <div className="title-projects">
                 <h2>Proyectos</h2>
                 <FontAwesomeIcon
@@ -156,11 +141,35 @@ const Homepage = () => {
                   className="homepage-social-icon"
                 />
               </div>
-
-              <AllProjects />
+              <div className="homepage-projects">
+                {INFO.projects.slice(0, 2).map((project, index) => (
+                  <div
+                    className="homepage-project"
+                    key={(index + 1).toString()}
+                  >
+                    <Project
+                      logo={project.logo}
+                      url_website={project.url_website}
+                      img_projecto={project.img_projecto}
+                      title={project.title}
+                      description={project.description}
+                      linkText={project.linkText}
+                      link={project.link}
+                      size="large"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="homepage-after-title">
+              <div className="title-projects">
+                <h2>Experiencia Laboral</h2>
+                <FontAwesomeIcon
+                  icon={faBriefcase}
+                  className="homepage-social-icon"
+                />
+              </div>
               <div className="homepage-experiences">
                 {INFO.experiences.slice(0, 2).map((experience, index) => (
                   <div
