@@ -63,7 +63,6 @@
 	font-size: 16px;
 	line-height: 28px;
 	width: 70%;
-
 }
 
 .page-footer {
@@ -99,10 +98,20 @@
 		width: calc((100% - 950px) / 2);
 	}
 
+	.subtitle{
+		width: 100%;
+	}
+
+	.title{
+		width: 100%;
+	}
+
 	.content-wrapper {
 		max-width: 980px;
 	}
 }
+
+
 
 @media (max-width: 800px) {
 	.content-wrapper {
@@ -124,3 +133,4 @@
 		width: 100%;
 	}
 }
+

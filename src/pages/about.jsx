@@ -32,18 +32,6 @@ const About = () => {
         <div className="content-wrapper">
           <div className="about-container">
             <div className="about-main">
-              <div className="about-right-side">
-                <div className="title about-title">{INFO.about.title}</div>
-
-                <div className="subtitle about-subtitle">
-                  {INFO.about.description}
-                </div>
-                <div className="about-skills">
-                  <h3 className="project-title">Tecnologias que manejo: </h3>
-                  <AllSkills />
-                </div>
-              </div>
-
               <div className="about-left-side">
                 <div className="about-image-container">
                   <div className="about-image-wrapper">
@@ -57,6 +45,17 @@ const About = () => {
 
                 <div className="about-socials">
                   <Socials />
+                </div>
+              </div>
+              <div className="about-right-side">
+                <div className="title about-title">{INFO.about.title}</div>
+
+                <div className="subtitle about-subtitle">
+                  {INFO.about.description}
+                </div>
+                <div className="about-skills">
+                  <h3 className="project-title">Tecnologias que manejo: </h3>
+                  <AllSkills />
                 </div>
               </div>
             </div>

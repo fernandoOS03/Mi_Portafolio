@@ -7,62 +7,19 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
 import Project from "../components/projects/project";
 import Experience from "../components/workExperience/experience";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
 import "./styles/homepage.css";
+
 import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const Homepage = () => {
-  const [stayLogo, setStayLogo] = useState(false);
-  const [logoSize, setLogoSize] = useState(80);
-  const [oldLogoSize, setOldLogoSize] = useState(80);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let scroll = Math.round(window.pageYOffset, 2);
-
-      let newLogoSize = 80 - (scroll * 4) / 10;
-
-      if (newLogoSize < oldLogoSize) {
-        if (newLogoSize > 40) {
-          setLogoSize(newLogoSize);
-          setOldLogoSize(newLogoSize);
-          setStayLogo(false);
-        } else {
-          setStayLogo(true);
-        }
-      } else {
-        setLogoSize(newLogoSize);
-        setStayLogo(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [logoSize, oldLogoSize]);
-
   const currentSEO = SEO.find((item) => item.page === "home");
-
-  const logoStyle = {
-    display: "flex",
-    position: stayLogo ? "fixed" : "relative",
-    top: stayLogo ? "3vh" : "auto",
-    zIndex: 999,
-    border: stayLogo ? "1px solid white" : "none",
-    borderRadius: stayLogo ? "50%" : "none",
-    boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
-  };
 
   return (
     <React.Fragment>
@@ -87,7 +44,7 @@ const Homepage = () => {
                 </div>
               </div>
 
-              <div style={{ width: "100%", height: "50vh" }}>
+              <div style={{ width: "80%", height: "30vh" }}>
                 <DotLottieReact
                   src="https://lottie.host/e693db80-fcea-4368-b4a1-d0697496209e/3FpDQg3xXa.lottie"
                   loop
@@ -132,7 +89,6 @@ const Homepage = () => {
               </a>
             </div>
 
-           
             <div className="homepage-after-projects">
               <div className="title-projects">
                 <h2>Proyectos</h2>
@@ -182,7 +138,7 @@ const Homepage = () => {
                       company={experience.company}
                       date={experience.date}
                       description={experience.description}
-                      size="large"
+                      size="large-experience"
                     />
                   </div>
                 ))}

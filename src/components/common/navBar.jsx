@@ -27,7 +27,7 @@ const NavBar = (props) => {
                   active === "projects" ? "nav-item active" : "nav-item"
                 }
               >
-                <Link to="/projects">Projectos</Link>
+                <Link to="/projects">Proyectos</Link>
               </li>
 
               <li

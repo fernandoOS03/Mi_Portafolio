@@ -3,7 +3,7 @@
 }
 
 .experience {
-  height: 100%;
+  height: auto;
   padding: 20px;
   background: #1e1e1e;
   border-radius: 20px;
@@ -109,11 +109,21 @@
   color: #aaa;
   
 }
-.experience.small{
-  width: 80%;
-
-}
 
 
 }
+
+@media (max-width: 480px) {
+	.small-experience{
+    height: auto;
+  }
+
+
+  .experience-card{
+    text-align: center;
+  }
+
+
+}
+
 

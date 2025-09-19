@@ -15,7 +15,7 @@ const AllExperience = () => {
             company={experience.company}
             date={experience.date}
             description={experience.description}
-            size="small"
+            size="small-experience"
           />
         </div>
       ))}
