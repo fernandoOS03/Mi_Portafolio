@@ -28,7 +28,7 @@ const INFO = {
   projects: [
     {
       title: "Barberia",
-      url_website: "/404.jsx",
+      url_website: null,
       img_projecto: "/barberia.png",
       description:
         "Desarrollado con Java usando spring boot, Talwind CSS para el front; este es un programa realizando con el fin de hacer y realizar citas para una barberia. fue hecho como proyecto final junto  con dos de mis compañeros",
@@ -38,7 +38,7 @@ const INFO = {
     },
     {
       title: "Portafolio Personal",
-      url_website: "https://www.google.com/",
+      url_website: "https://fernando-o-s.netlify.app/",
       img_projecto: "/portafolio.png",
       description:
         "Portafolio personal desarrollado en React. Presenta mis proyectos de desarrollo backend y especialización en automatización web con diversas tecnologías.",
