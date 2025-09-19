@@ -2,7 +2,7 @@ import React from "react";
 import Experience from "./experience";
 import INFO from "../../data/user";
 
-import "./styles/allExperience.css";
+import "./styles/allexperience.css";
 
 const AllExperience = () => {
   return (
