@@ -51,9 +51,9 @@ const INFO = {
   experiences: [
     {
       logoEmpresa: "/paino.png",
-      title: "Frontend Developer",
+      title: "Software Engineer Intern",
       company: "Notaria Paino",
-      date: "Enero 2024 - Junio 2024",
+      date: "Agosto 2025 - Actualidad",
       description:
         "Realizo  procesos de web scraping en Python utilizando Playwright y Selenium para la extracción automatizada de datos; Ademas de automatizacion de tareas repetitivas y Gestión y optimización de bases de datos.",
     },
