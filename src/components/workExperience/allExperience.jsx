@@ -4,6 +4,7 @@ import INFO from "../../data/user";
 
 import "./styles/allexperience.css";
 
+
 const AllExperience = () => {
   return (
     <div className="all-experience-container">
